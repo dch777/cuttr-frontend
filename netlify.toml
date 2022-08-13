@@ -1,0 +1,17 @@
+[[redirects]]
+  from = "/auth/*"
+  to = "http://cuttr-env.eba-pzr8ajsz.us-east-1.elasticbeanstalk.com/auth/:splat"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/lines/*"
+  to = "http://cuttr-env.eba-pzr8ajsz.us-east-1.elasticbeanstalk.com/lines/:splat"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/socket.io/*"
+  to = "http://cuttr-env.eba-pzr8ajsz.us-east-1.elasticbeanstalk.com/socket.io/:splat"
+  status = 200
+  force = true

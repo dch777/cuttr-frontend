@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Navigate, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import axios from "axios";
 import io from "socket.io-client";
 
@@ -28,7 +28,7 @@ const Line = (props) => {
 		return () => {
 			socket.off("line-" + lineID + "-update");
 		};
-	}, []);
+	}, [lineID]);
 
 	const join = () => {
 		axios.get("/lines/" + lineID + "/join").catch((err) => {

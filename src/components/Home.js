@@ -20,9 +20,11 @@ const Home = (props) => {
 		return (
 			<div class="min-h-full flex items-center justify-center py-4 px-4">
 				<div class="max-w-7xl w-full">
-					{lines.map((line) => (
-						<Link to={line.uuid.S}>{line.address.S}</Link>
-					))}
+					{Array.isArray(lines)
+						? lines.map((line) => (
+								<Link to={line.uuid.S}>{line.address.S}</Link>
+						  ))
+						: null}
 				</div>
 			</div>
 		);
