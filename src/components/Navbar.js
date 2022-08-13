@@ -27,12 +27,6 @@ const Navbar = (props) => {
 							</div>
 						</div>
 						<div class="absolute inset-y-0 right-0 flex items-center text-white">
-							<Link
-								to="/resources"
-								class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-lg font-medium mr-3"
-							>
-								<a href="#Resources">Resources</a>
-							</Link>
 							<button
 								onClick={logout}
 								class=" text-gray-800 bg-white px-3 py-2 rounded-md text-lg font-medium ml-5"

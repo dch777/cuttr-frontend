@@ -22,14 +22,16 @@ const Home = (props) => {
 				<div class="max-w-7xl w-full">
 					{Array.isArray(lines)
 						? lines.map((line) => (
-								<Link to={line.uuid.S}>{line.address.S}</Link>
+								<Link to={line.uuid.S} state={{ line: line }}>
+									<button class="rounded p-2 text-white bg-blue-500 hover:bg-blue-600">
+										{line.address.S}
+									</button>
+								</Link>
 						  ))
 						: null}
 				</div>
 			</div>
 		);
-	} else {
-		return <h1 class="text-xl">Please Log In</h1>;
 	}
 };
 
