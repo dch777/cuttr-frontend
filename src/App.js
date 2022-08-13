@@ -48,7 +48,7 @@ const App = () => {
 						}
 					/>
 					<Route
-						path="/:lineID"
+						path="/l/:lineID"
 						element={<Line refresh={refresh} loggedIn={loggedIn} user={user} />}
 					/>
 					<Route

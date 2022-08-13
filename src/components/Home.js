@@ -22,7 +22,7 @@ const Home = (props) => {
 				<div class="max-w-7xl w-full">
 					{Array.isArray(lines)
 						? lines.map((line) => (
-								<Link to={line.uuid.S} state={{ line: line }}>
+								<Link to={"/l/" + line.uuid.S} state={{ line: line }}>
 									<button class="rounded p-2 text-white bg-blue-500 hover:bg-blue-600">
 										{line.address.S}
 									</button>
